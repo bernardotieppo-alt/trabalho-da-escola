@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil Interativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="profile-container">
+        <header class="profile-header">
+            <<img src="https://i.pinimg.com/736x/3c/e7/39/3ce739e26a4180976a46701c465f62f1.jpg" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 720px; height: 254px; margin: 0px; width: 254px;" alt="shiesty Mark icon" jsname="kn3ccd">
+            <h1>Meu Perfil</h1>
+            <p class="subtitle">Séries | Games | Academia</p>
+        </header>
+
+        <main class="interests-grid">
+            
+            <div class="card" onclick="toggleCard('series')">
+                <div class="card-icon">📺</div>
+                <h3>Séries</h3>
+                <p>Maratonar histórias incríveis é comigo mesmo.</p>
+                <div id="series" class="card-details hidden">
+                    <hr>
+                    <p><strong>Gêneros favoritos:</strong> Ficção Científica, Suspense e Drama.</p>
+                    <p><em>"Só mais um episódio..."</em></p>
+                </div>
+            </div>
+
+            <div class="card" onclick="toggleCard('games')">
+                <div class="card-icon">🎮</div>
+                <h3>Jogos</h3>
+                <p>Focado na gameplay e em desafios eletrizantes.</p>
+                <div id="games" class="card-details hidden">
+                    <hr>
+                    <p><strong>Plataformas:</strong> PC / Console.</p>
+                    <p><strong>Estilo:</strong> RPG, FPS e Cooperativos.</p>
+                </div>
+            </div>
+
+            <div class="card" onclick="toggleCard('academia')">
+                <div class="card-icon">💪</div>
+                <h3>Academia</h3>
+                <p>Buscando a minha melhor versão todos os dias.</p>
+                <div id="academia" class="card-details hidden">
+                    <hr>
+                    <p><strong>Foco atual:</strong> Hipertrofia e Consistência.</p>
+                    <p><em>"O treino de hoje tá pago!"</em></p>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="profile-footer">
+            <button id="btn-status" onclick="mudarStatus()">Ver o que estou fazendo agora</button>
+            <p id="status-atual" class="status-texto"></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
